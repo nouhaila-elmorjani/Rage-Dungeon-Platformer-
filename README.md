@@ -174,8 +174,6 @@ Educational project developed for Software Engineering & Game Development course
 - **Game Design Principles** from classic platformer titles
 - **Open Source Tools** that made development possible
 
----
-
 **Developer**: Nouhaila  
 **Course**: Software Engineering & Game Development  
 **Technologies**: Python, PyGame, CSV-based level design
