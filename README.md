@@ -44,7 +44,7 @@ Rage Dungeon is a feature-complete 2D platformer developed with PyGame, demonstr
 - PyGame 2.0+
 
 ### Installation
-
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/rage-dungeon-platformer.git
 
@@ -207,4 +207,3 @@ Developer: Nouhaila
 Course: Software Engineering & Game Development
 Completion: December 2024
 Technologies: Python, PyGame, CSV-based level design
-
