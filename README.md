@@ -1,3 +1,6 @@
+Here's the complete README.md in a code block, exactly as it should appear on GitHub:
+
+
 # Rage Dungeon - PyGame Platformer
 
 **A challenging 2D platformer with enhanced physics and progressive level design**  
@@ -56,31 +59,27 @@ pip install pygame
 
 # Run the game
 python Python_Platformer.py
-🕹️ Controls
-Movement
+```
 
-Left/Right: Arrow Keys or A/D
+## 🕹️ Controls
 
-Jump: Spacebar
+**Movement**
+- **Left/Right**: Arrow Keys or A/D
+- **Jump**: Spacebar
+- **Dash**: Left Shift
 
-Dash: Left Shift
+**Interface**
+- **Pause Menu**: Escape
+- **Level Selection (Demo)**: Tab
+- **Quick Complete (Demo)**: C
 
-Interface
+**Mouse**
+- **Menu Navigation**: Click buttons
+- **Level Selection**: Click desired level
 
-Pause Menu: Escape
+## 📁 Project Structure
 
-Level Selection (Demo): Tab
-
-Quick Complete (Demo): C
-
-Mouse
-
-Menu Navigation: Click buttons
-
-Level Selection: Click desired level
-
-📁 Project Structure
-text
+```
 rage-dungeon-platformer/
 ├── Python_Platformer.py     # Main game loop and state management
 ├── player.py               # Player physics and movement system
@@ -98,112 +97,88 @@ rage-dungeon-platformer/
 ├── MenuItems/              # UI assets and visual elements
 ├── SpriteSheets/          # Character and object animations
 └── Sounds/                # Audio assets and music files
-🔧 Technical Implementation
-Physics Customization
+```
+
+## 🔧 Technical Implementation
+
+### Physics Customization
 The player movement system has been carefully calibrated:
+- **Jump Strength**: -22 (vertical impulse force)
+- **Movement Speed**: 10 (horizontal velocity)
+- **Gravity**: 0.7 (fall acceleration rate)
+- **Dash Speed**: 7 (horizontal boost velocity)
 
-Jump Strength: -22 (vertical impulse force)
-
-Movement Speed: 10 (horizontal velocity)
-
-Gravity: 0.7 (fall acceleration rate)
-
-Dash Speed: 7 (horizontal boost velocity)
-
-Level Design System
+### Level Design System
 Levels use CSV files with numerical codes:
+- `142`: Standard ground platform
+- `270-271`: Hazardous spike traps
+- `285`: Player starting position
+- `322`: Level completion portal
+- Various IDs for enemies, collectibles, and mechanics
 
-142: Standard ground platform
-
-270-271: Hazardous spike traps
-
-285: Player starting position
-
-322: Level completion portal
-
-Various IDs for enemies, collectibles, and mechanics
-
-Data Persistence
+### Data Persistence
 Player progress is stored with tracking for:
+- Maximum level progression
+- Individual level completion times
+- Collectible item acquisition status
+- Ability unlock progression
 
-Maximum level progression
+## 📈 Development Process
 
-Individual level completion times
+**Phase 1: Core Mechanics**
+- Basic movement implementation
+- Gravity and collision systems
+- Player state management
 
-Collectible item acquisition status
+**Phase 2: Level Design**
+- CSV-based level format creation
+- Progressive difficulty balancing
+- Checkpoint and respawn systems
 
-Ability unlock progression
+**Phase 3: Polish & Systems**
+- Animated sprite integration
+- Audio system implementation
+- Menu and UI development
 
-📈 Development Process
-Phase 1: Core Mechanics
+**Phase 4: Presentation Features**
+- Demo mode implementation
+- Level switching functionality
+- Save system optimization
 
-Basic movement implementation
+## 🛠️ Customization Options
 
-Gravity and collision systems
+**For Different Gameplay Styles:**
+- Adjust physics parameters in `player.py`
+- Modify level designs in CSV files
+- Create new power-up abilities
+- Customize UI elements in `MenuItems/`
 
-Player state management
+**For Extended Development:**
+- Add new enemy types with unique behaviors
+- Create additional level themes
+- Implement new collectible items
+- Expand the ability system
 
-Phase 2: Level Design
+## 🤝 Contributing
 
-CSV-based level format creation
-
-Progressive difficulty balancing
-
-Checkpoint and respawn systems
-
-Phase 3: Polish & Systems
-
-Animated sprite integration
-
-Audio system implementation
-
-Menu and UI development
-
-Phase 4: Presentation Features
-
-Demo mode implementation
-
-Level switching functionality
-
-Save system optimization
-
-🛠️ Customization Options
-For Different Gameplay Styles:
-
-Adjust physics parameters in player.py
-
-Modify level designs in CSV files
-
-Create new power-up abilities
-
-Customize UI elements in MenuItems/
-
-For Extended Development:
-
-Add new enemy types with unique behaviors
-
-Create additional level themes
-
-Implement new collectible items
-
-Expand the ability system
-
-🤝 Contributing
 This project serves as a final course submission, but the codebase is structured to allow for educational extensions and modifications for learning purposes.
 
-📄 License
+## 📄 License
+
 Educational project developed for Software Engineering & Game Development course. Code available for academic and learning purposes.
 
-🙏 Acknowledgments
-PyGame Community for the excellent game development framework
+## 🙏 Acknowledgments
 
-Course Instructors for guidance and educational framework
+- **PyGame Community** for the excellent game development framework
+- **Course Instructors** for guidance and educational framework
+- **Game Design Principles** from classic platformer titles
+- **Open Source Tools** that made development possible
 
-Game Design Principles from classic platformer titles
+---
 
-Open Source Tools that made development possible
+**Developer**: Nouhaila  
+**Course**: Software Engineering & Game Development  
+**Completion**: December 2024  
+**Technologies**: Python, PyGame, CSV-based level design
+```
 
-Developer: Nouhaila
-Course: Software Engineering & Game Development
-Completion: December 2024
-Technologies: Python, PyGame, CSV-based level design
