@@ -177,5 +177,4 @@ Educational project developed for Software Engineering & Game Development course
 **Developer**: Nouhaila  
 **Course**: Software Engineering & Game Development  
 **Technologies**: Python, PyGame, CSV-based level design
-```
 
