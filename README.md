@@ -1,4 +1,4 @@
-Here's the complete README.md in a code block, exactly as it should appear on GitHub:
+
 
 
 # Rage Dungeon - PyGame Platformer
@@ -178,7 +178,6 @@ Educational project developed for Software Engineering & Game Development course
 
 **Developer**: Nouhaila  
 **Course**: Software Engineering & Game Development  
-**Completion**: December 2024  
 **Technologies**: Python, PyGame, CSV-based level design
 ```
 
