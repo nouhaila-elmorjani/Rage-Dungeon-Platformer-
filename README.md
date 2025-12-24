@@ -49,7 +49,7 @@ Rage Dungeon is a feature-complete 2D platformer developed with PyGame, demonstr
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/rage-dungeon-platformer.git
+git clone https://github.com/nouhaila-elmorjani/Rage-Dungeon-Platformer-.git
 
 # Navigate to project directory
 cd rage-dungeon-platformer
