@@ -44,7 +44,7 @@ Rage Dungeon is a feature-complete 2D platformer developed with PyGame, demonstr
 - PyGame 2.0+
 
 ### Installation
-
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/rage-dungeon-platformer.git
 
@@ -57,142 +57,154 @@ pip install pygame
 # Run the game
 python Python_Platformer.py
 🕹️ Controls
-Action	Primary Control	Alternative
-Move Left	Left Arrow	A
-Move Right	Right Arrow	D
-Jump	Spacebar	
-Dash	Left Shift	
-Pause Menu	Escape	
-Level Selection (Demo)	Tab	
-Quick Complete (Demo)	C	
-🏗️ Project Architecture
-File Structure
+Movement
+
+Left/Right: Arrow Keys or A/D
+
+Jump: Spacebar
+
+Dash: Left Shift
+
+Interface
+
+Pause Menu: Escape
+
+Level Selection (Demo): Tab
+
+Quick Complete (Demo): C
+
+Mouse
+
+Menu Navigation: Click buttons
+
+Level Selection: Click desired level
+
+📁 Project Structure
 text
 rage-dungeon-platformer/
 ├── Python_Platformer.py     # Main game loop and state management
-├── player.py               # Player character with physics implementation
-├── Levels.py               # Level loading and collision systems
-├── Menu.py                 # UI interface and menu navigation
+├── player.py               # Player physics and movement system
+├── Levels.py               # Level loading and collision handling
+├── Menu.py                 # UI interface and menu navigation  
 ├── Support.py              # File I/O and data persistence
 ├── Blocks_And_Objects.py   # Game objects and interactive elements
 ├── Sounds.py               # Audio management system
 ├── README.md               # Project documentation
-├── .gitignore              # Version control exclusions
 ├── Levels/                 # Level definition files (CSV format)
-│   ├── Level 0/           # Tutorial level
+│   ├── Level 0/           # Tutorial introduction
 │   ├── Level 1-8/         # Progressive challenge levels
-│   └── Level 9/           # Final boss level
-├── Players/                # Player data and high scores
-├── MenuItems/              # UI assets and interface elements
+│   └── Level 9/           # Final level challenge
+├── Players/                # Player save data and high scores
+├── MenuItems/              # UI assets and visual elements
 ├── SpriteSheets/          # Character and object animations
 └── Sounds/                # Audio assets and music files
-Physics Parameters (Customized)
-The player movement has been carefully calibrated for optimal gameplay feel:
+🔧 Technical Implementation
+Physics Customization
+The player movement system has been carefully calibrated:
 
-Jump Strength: -22 (vertical impulse)
+Jump Strength: -22 (vertical impulse force)
 
 Movement Speed: 10 (horizontal velocity)
 
-Gravity: 0.7 (fall acceleration)
+Gravity: 0.7 (fall acceleration rate)
 
-Dash Speed: 7 (horizontal boost)
+Dash Speed: 7 (horizontal boost velocity)
 
 Level Design System
-Levels are defined using CSV files where numerical values represent different game elements:
+Levels use CSV files with numerical codes:
 
-142: Solid ground tiles
+142: Standard ground platform
 
 270-271: Hazardous spike traps
 
-285: Player spawn point
+285: Player starting position
 
 322: Level completion portal
 
-Various IDs for enemies, collectibles, and interactive objects
+Various IDs for enemies, collectibles, and mechanics
 
-🔧 Development Features
-For Presentation & Demonstration
-Demo Mode: All levels unlocked by default for seamless showcasing
+Data Persistence
+Player progress is stored with tracking for:
 
-Level Navigation: Instant level switching with Tab key during gameplay
+Maximum level progression
 
-Quick Completion: C key for rapid level progression during demonstrations
+Individual level completion times
 
-Save System Architecture
-Player progress is stored in a structured text format tracking:
-
-Maximum level reached
-
-Completion time for each level
-
-Golden gear collection status
+Collectible item acquisition status
 
 Ability unlock progression
 
-Extensibility
-The modular design allows for easy expansion:
+📈 Development Process
+Phase 1: Core Mechanics
 
-Add new levels by creating CSV files in the Levels/ directory
+Basic movement implementation
 
-Modify physics parameters in player.py for different gameplay feels
+Gravity and collision systems
 
-Extend the ability system with new power-ups
+Player state management
 
-Customize UI elements in the MenuItems/ folder
+Phase 2: Level Design
 
-📈 Learning Outcomes
-This project demonstrates comprehensive understanding of:
-
-Software Engineering Principles
-Object-oriented design patterns
-
-Modular code organization
-
-State management and game loops
-
-File I/O and data persistence
-
-Game Development Techniques
-2D physics and collision detection
-
-Sprite animation and rendering
-
-Audio integration and management
-
-User interface design
+CSV-based level format creation
 
 Progressive difficulty balancing
 
-Project Management
-Iterative development process
+Checkpoint and respawn systems
 
-Version control with Git
+Phase 3: Polish & Systems
 
-Professional documentation
+Animated sprite integration
 
-Presentation preparation
+Audio system implementation
+
+Menu and UI development
+
+Phase 4: Presentation Features
+
+Demo mode implementation
+
+Level switching functionality
+
+Save system optimization
+
+🛠️ Customization Options
+For Different Gameplay Styles:
+
+Adjust physics parameters in player.py
+
+Modify level designs in CSV files
+
+Create new power-up abilities
+
+Customize UI elements in MenuItems/
+
+For Extended Development:
+
+Add new enemy types with unique behaviors
+
+Create additional level themes
+
+Implement new collectible items
+
+Expand the ability system
 
 🤝 Contributing
-While this is a final project submission, the codebase is structured to allow for:
-
-Level design contributions via CSV files
-
-Physics parameter adjustments for different gameplay styles
-
-UI/UX improvements through asset modifications
+This project serves as a final course submission, but the codebase is structured to allow for educational extensions and modifications for learning purposes.
 
 📄 License
-This project is developed as a final course submission. All code is available for educational purposes.
+Educational project developed for Software Engineering & Game Development course. Code available for academic and learning purposes.
 
 🙏 Acknowledgments
-Built with PyGame
+PyGame Community for the excellent game development framework
 
-Developed as a final project for Software Engineering & Game Development course
+Course Instructors for guidance and educational framework
 
-Inspired by classic 2D platformer mechanics
+Game Design Principles from classic platformer titles
 
-Special thanks to course instructors for guidance and feedback
+Open Source Tools that made development possible
 
 Developer: Nouhaila
 Course: Software Engineering & Game Development
-Completion Date: December 2024
+Completion: December 2024
+Technologies: Python, PyGame, CSV-based level design
+
